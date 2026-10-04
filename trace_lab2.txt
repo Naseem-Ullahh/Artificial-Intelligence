@@ -1,0 +1,20 @@
+/home/naseemullah/Naseem Works/CODE STUFF/Python/lab2-agent/agent_lab2.py:28: LangChainDeprecationWarning: Use `langchain.agents.create_agent` for new applications. It provides a more flexible agent factory with middleware support, structured output, and integration with LangGraph for persistence, streaming, and human-in-the-loop workflows. Migration guide: https://docs.langchain.com/oss/python/migrate/langchain-v1
+  agent = initialize_agent(
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+
+
+[1m> Entering new AgentExecutor chain...[0m
+[32;1m[1;3mThought: I need to find the length of the word 'Intelligence' first, and then multiply that number by 12.
+Action: WordLength
+Action Input: Intelligence[0m
+Observation: [33;1m[1;3m12[0m
+Thought:[32;1m[1;3mThought: Now that I have the length of the word 'Intelligence', which is 12, I need to multiply this number by 12 using the Calculator.
+Action: Calculator
+Action Input: 12*12[0m
+Observation: [36;1m[1;3m144[0m
+Thought:[32;1m[1;3mI now know the final answer.
+
+Final Answer: 144[0m
+
+[1m> Finished chain.[0m
+144
